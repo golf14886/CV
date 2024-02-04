@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.nev-margin {
+  margin-left: -170px;
+}
+.background {
+}
+.hover-pointer:hover {
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.content {
+  animation-name: content;
+  animation-duration: 3s;
+}
+@keyframes content {
+  from {
+    display: none;
+    transform: translate(-50px, 0px);
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes fadeIn {
+  from {
+    opacity: 30%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
