@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -7,7 +8,13 @@ export default function Projects() {
         href="https://github.com/golf14886/Tasklist"
         className="flex items-end"
       >
-        <img src="GitHub-Logo.png" alt="" className="w-2/12" />
+        <Image
+          src="/GitHub-Logo.png"
+          alt=""
+          className="w-2/12"
+          width={600}
+          height={400}
+        ></Image>
         https://github.com/golf14886/Tasklist
       </a>
     </div>

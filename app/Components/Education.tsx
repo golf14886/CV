@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -8,11 +9,23 @@ export default function Education() {
       </div>
       <div className=" mt-5">
         <div className=" flex flex-col items-center">
-          <img src="ตราโรงเรียนเชียงคาน.png" alt="" className="w-1/12" />
+          <Image
+            src="/ตราโรงเรียนเชียงคาน.png"
+            alt=""
+            className="w-1/12"
+            width={600}
+            height={400}
+          ></Image>
           <div>Chiang Khan School</div>
         </div>
         <div className=" flex flex-col items-center">
-          <img src="lru.png" alt="" className="w-1/12" />
+          <Image
+            src="/lru.png"
+            alt=""
+            className="w-1/12"
+            width={600}
+            height={400}
+          ></Image>
           <div>2013 - 2016</div>
           <div>Loei Rajabhat University</div>
           <div>Faculty of Management Science</div>
