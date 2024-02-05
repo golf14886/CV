@@ -9,7 +9,7 @@ import Skill from "./Components/Skill";
 import Projects from "./Components/Projects";
 import Education from "./Components/Education";
 
-export default function page() {
+export default function Page() {
   const [showComponet, setShowComponet] = useState(<Home></Home>);
   return (
     <div className="flex h-screen">
